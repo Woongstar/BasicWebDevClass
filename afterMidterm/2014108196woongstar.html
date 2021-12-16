@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>20141081896 양지웅</title>
+    <!--    <link rel="stylesheet" href="2014108196.css">-->
+    <style>
+        body {
+            min-height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .wrapper {
+            width: 300px;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin-top: 50px;
+        }
+
+        .wrapper .loader {
+            width: 200px;
+            height: 200px;
+            border: 5px solid black;
+            border-top: 5px solid red;
+            animation: ani 1s ease infinite;
+            border-radius: 50%;
+            position: relative;
+        }
+
+
+        @keyframes ani {
+
+            100% {
+                transform: rotate(360deg);
+            }
+
+
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <div class="loader">
+    </div>
+</div>
+</body>
+</html>
